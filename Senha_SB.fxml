@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #87cefa;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label graphicTextGap="6.0" layoutX="219.0" layoutY="92.0" prefHeight="70.0" prefWidth="162.0" text="Insira sua senha:" textAlignment="CENTER">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="144.0" layoutY="188.0" prefHeight="25.0" prefWidth="313.0" promptText="senha" />
+      <Button layoutX="266.0" layoutY="242.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="68.0" text="Entrar">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
