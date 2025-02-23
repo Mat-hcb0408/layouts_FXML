@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PositivoENegativo.PositivoNegativoController">
+
+    <VBox alignment="CENTER" spacing="10">
+        <padding>
+            <Insets bottom="20" left="20" right="20" top="20" />
+        </padding>
+
+        <!-- Título -->
+        <Label style="-fx-text-fill: #FFFFFF; -fx-font-size: 14px;" text="Insira um número:" />
+
+        <!-- Campo de Entrada -->
+        <TextField fx:id="inputNumero" alignment="CENTER" promptText="Digite um número" style="-fx-background-color: #1E1E1E; -fx-text-fill: white;                           -fx-border-color: #444444; -fx-border-radius: 5px;" />
+
+        <!-- Botão -->
+        <Button fx:id="btnVerificar" onAction="#verificarNumero" onMouseEntered="#mudarCorBotao" onMouseExited="#restaurarCorBotao" style="-fx-background-color: #0078D7; -fx-text-fill: white; -fx-border-radius: 5px;" text="Verificar" />
+
+        <!-- Resultado -->
+        <Label fx:id="lblResultado" style="-fx-text-fill: #BBBBBB; -fx-font-size: 14px;" text="Resultado aparecerá aqui" />
+
+    </VBox>
+
+</StackPane>
